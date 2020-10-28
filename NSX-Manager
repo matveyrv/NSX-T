@@ -1,0 +1,8 @@
+sa-nsxmgr-01> get logical-switches
+
+sa-nsxmgr-01> get logical-switch <UUID> vtep
+
+sa-nsxmgr-01> get logical-switch <UUID> mac
+
+sa-nsxmgr-01> get logical-switch <UUID> arp
+
