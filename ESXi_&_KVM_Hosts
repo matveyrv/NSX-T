@@ -1,0 +1,6 @@
+[root@sa-esxi-04:~] nsxcli
+sa-esxi-04.vclass.local> get logical-switch <UUID> vtep
+
+sa-esxi-04.vclass.local> get logical-switch <UUID> mac
+
+sa-esxi-04.vclass.local> get logical-switch <UUID> arp
