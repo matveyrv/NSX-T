@@ -1,0 +1,13 @@
+sa-nsxedge-01> get logical-routers
+sa-nsxedge-01> get logical-router d9ec330f-b6f2-46dd-bd7b-9ae77547fe72 interface
+sa-nsxedge-01> get logical-router d9ec330f-b6f2-46dd-bd7b-9ae77547fe72 forwarding
+sa-nsxedge-01> get logical-router d9ec330f-b6f2-46dd-bd7b-9ae77547fe72 nei
+sa-nsxedge-01> vrf 2
+sa-nsxedge-01(vrf)> get interface
+sa-nsxedge-01(vrf)> get forwarding
+
+Note that for SRs you can get the routing table too...
+sa-nsxedge-01> vrf 3
+sa-nsxedge-01(vrf)> get interface
+sa-nsxedge-01(vrf)> get forwarding
+sa-nsxedge-01(vrf)> get route
