@@ -1,0 +1,6 @@
+set cli-timeout 0
+get logical-routers
+vrf 6
+get route
+get bgp neighbor summary
+exit
