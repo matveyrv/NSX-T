@@ -4,3 +4,8 @@ sa-esxi-04.vclass.local> get logical-switch <UUID> vtep
 sa-esxi-04.vclass.local> get logical-switch <UUID> mac
 
 sa-esxi-04.vclass.local> get logical-switch <UUID> arp
+
+
+
+Capture traffic from sesgment
+pktcap-uw --uplink vmnic4 --dir=2 --vni 71680 -o - | 
