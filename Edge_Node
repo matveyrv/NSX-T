@@ -11,3 +11,11 @@ sa-nsxedge-01> vrf 3
 sa-nsxedge-01(vrf)> get interface
 sa-nsxedge-01(vrf)> get forwarding
 sa-nsxedge-01(vrf)> get route
+
+
+
+
+pacet capture
+set capture session <number> interface fp-eth1 diretion out
+set capture session <number>
+del capture session <number>
