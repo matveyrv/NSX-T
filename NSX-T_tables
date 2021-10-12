@@ -18,3 +18,32 @@ get bridge mac-sync-table
 get logical-switch a88fd962-895d-4ac3-be5f-beb9ead6972e mac-address-table
 ## внутри будут разные маки все маки у которых поле ENCAP = GENEVE приходят из overlay 
 ## маки у каоторых энкапсуляции нет - приходят их vlan
+
+
+______________________________________________________________________________________
+i113edgevm05> get logical-switch a88fd962-895d-4ac3-be5f-beb9ead6972e mac-address-table
+Tue Oct 12 2021 UTC 09:25:41.691
+Logical Switch
+UUID        : a88fd962-895d-4ac3-be5f-beb9ead6972e
+VNI         : 73740
+Device      : fp-eth1
+ENCAP       : GENEVE
+Replication : mtep
+Enable Hub  : False
+MAC-Table:
+    MAC         : 00:50:56:a1:50:1a
+        Port              : 8659120e-d06c-48f1-a887-a85101291c42
+        IFUID             : 276
+        SOURCE            : Dynamic
+    MAC         : 00:50:56:a1:be:fa
+        Tunnel            : a5955cc9-8089-54d4-97cf-a76c92fac599
+        IFUID             : 281
+        LOCAL             : 10.59.212.31
+        REMOTE            : 10.59.212.16
+        ENCAP             : GENEVE
+        SOURCE            : Static
+    MAC         : 00:09:0f:09:00:27
+        Port              : 8659120e-d06c-48f1-a887-a85101291c42
+        IFUID             : 276
+        SOURCE            : Dynamic
+______________________________________________________________________________________
