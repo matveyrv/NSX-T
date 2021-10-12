@@ -1,4 +1,20 @@
 From Manager
 get logical-switches
 get logical-switch 65538 mac-table
-et logical-switch 65542 arp-table
+get logical-switch 65542 arp-table
+
+about bridging
+
+##берем  Bridge Port UUID (который ассоциирован с нужным vlan id )
+get bridge
+смторим маки в бридже в нужном Bridge Port UUID
+get bridge mac-sync-table 
+## тут будут только маки из вилана 
+
+что бы узнать маки из сегмента : 
+
+
+##берем  Attached Logical Switch UUID (который ассоциирован с нужным vlan id )
+get logical-switch a88fd962-895d-4ac3-be5f-beb9ead6972e mac-address-table
+## внутри будут разные маки все маки у которых поле ENCAP = GENEVE приходят из overlay 
+## маки у каоторых энкапсуляции нет - приходят их vlan
