@@ -1,0 +1,4 @@
+From Manager
+get logical-switches
+get logical-switch 65538 mac-table
+et logical-switch 65542 arp-table
