@@ -1,0 +1,20 @@
+ start capture interface <interface-name> [file <filename>] [count <packet-count>] [expression <expression>]
+Start a packet capture on the specified interface. If you do not specify a file, the output is displayed on the terminal. Type Control-C to end the packet capture. You can filter the capture using tcpdump expressions. The expression must be the last argument of the command. The expression is a keyword followed by a value. You can specify multiple keyword-value pairs. The list of keywords and acceptable values are:
+
+Keyword 	Value
+ethtype 	Ethernet type in HEX format. 0x<ETHTYPE>
+mac 	Source or destination MAC address
+srcmac 	Source MAC address
+dstmac 	Destination MAC address
+ipproto 	IP protocol in HEX format. 0x<PROTO>
+ip 	Source or destination IPv4 address
+srcip 	Source IPv4 address
+dstip 	Destination IPv4 address
+port 	Source or destination TCP port
+srcport 	Source TCP port
+dstport 	Destination TCP port
+vni 	VNI of the flow
+vlan 	VLAN ID
+
+
+https://vdc-download.vmware.com/vmwb-repository/dcr-public/182d387c-eaa8-4cdc-812d-8cb25812fefd/d09cad1f-553d-4c9e-a5b1-6544280eec25/NSX-T%20Command-Line%20Interface%20Reference.html#start%20capture%20interface%20%3Cinterface-name%3E%20[file%20%3Cfilename%3E]%20[count%20%3Cpacket-count%3E]%20[expression%20%3Cexpression%3E]
