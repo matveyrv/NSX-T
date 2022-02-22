@@ -1,0 +1,1 @@
+curl -k -u login:password https://i113nsxmgr01.sys.local/api/v1/events
