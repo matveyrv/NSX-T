@@ -1,0 +1,8 @@
+get firewall efb15257-3475-4215-a4a4-afc59e7bd210 ruleset rules
+get firewall efb15257-3475-4215-a4a4-afc59e7bd210 connection
+get firewall interfaces | find 156864
+get log-file syslog | find  93.91.169.162
+
+
+
+https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-DE6FE8CB-017E-41C8-85FC-D71CF27F85C2.html
